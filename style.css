@@ -1,0 +1,128 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+body {
+    background-image: linear-gradient(to right, rgb(156, 228, 192), rgb(156, 228, 192));
+}
+
+
+.card-WEATHER{
+    position: fixed;
+    background-color: rgb(187, 236, 241);
+    height: 36em;
+    width: 25em;
+    margin: 11em 0 0 20em;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(146, 253, 253), 0 6px 20px 0 rgb(207, 255, 255), 0 6px 20px 0 rgb(124, 212, 212);
+}
+
+
+.search {
+    width: 100%;
+    position: relative
+  }
+  
+  .searchTerm {
+    float: left;
+    width: 100%;
+    border: 3.5px solid #00becc;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #00becc;
+  }
+  
+  .searchTerm:focus{
+    color: #00becc;
+  }
+  
+  .searchButton {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .search:before {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    line-height: 36px;
+    background: #00becc;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'FontAwesome';
+    content: '\f002';
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    position: absolute;
+    width: 40%;
+    margin: 2em 0 0 10em;
+    z-index: 1000;
+  }
+
+#City,
+#Temp,
+#Status,
+#Wind-title,
+#Humidity-title,
+#Time {
+    font-size: large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#City {
+    font-size: 28px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Time {
+    margin: 0 0 0 6.5em;
+}
+#Icon {
+    margin: 2em 0 0 2em;
+}
+#Temp {
+    font-size: 40px;
+    margin: -3.5em 0 0 6em;
+}
+
+#Status {
+    font-size: 25px;
+    margin: 3em 0 0 5em;
+}
+
+#Wind {
+    margin: 4em 0 0 14em;
+}
+
+#Wind-title {
+    font-size: x-large;
+}
+
+#Speed {
+    position: absolute;
+    font-size: 22px;
+    margin: -10px 0 0 35px;
+}
+
+#Humidity {
+    margin: -3.5em 0 0 4em;
+}
+
+#Humidity-title {
+    font-size: x-large;
+}
+
+#Porcentage{
+    margin: -12px 0 0 28px;
+    font-size: 24px;
+}
